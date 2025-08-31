@@ -13,6 +13,8 @@ const Form = () => {
         console.log(userRef.current.value)
         console.log(emailRef.current.value)
         console.log(messageRef.current.value)
+        console.log('hello');
+        
     }
 
   return (
