@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+
+body{
+  margin: 0;
+}
+input{
+  @apply border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none
+}
+
+.app {
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  min-height: 100vh;
+  padding: 20px;
+  
+}
+.home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.home h1{
+  text-align: center;
+  color: #333;
+  margin: 60px 0px 20px 0px;
+}
+.title {
+  text-align: center;
+  color: #333;
+  margin: 60px 0px 20px 0px;
+
+
+
+}
+
+.product-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 50px;
+
+}
+
+.product-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+height: 100%;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+.product-image {
+  max-width: 100%;
+  max-height: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+}
+
+.product-price {
+  font-size: 16px;
+  color: #28a745;
+  margin: 6px 0;
+}
+
+.product-category {
+  font-size: 14px;
+  color: #555;
+}
+
+.product-stock {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.product-rating {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #f39c12;
+}
+nav {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
